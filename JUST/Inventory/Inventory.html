@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Lalezar&family=Inter' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="inventory-container">
+        
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="../Images/Logo.jpg" alt="Logo" class="logo">
+                <h3>Thifleth’s Sewing 
+                    <br>Shop</h3>
+            </div>
+            <ul>
+                
+                <li><a href="../Dashboard/dashboard.html">Dashboard</a></li>
+                
+                <li><a href="../Order_Management/Order/Order.html">Procure Supplies</a></li>
+                
+                <div class="selected">
+                    <li>
+                        <a href="Inventory.html">Inventory</a>
+                    </li>
+                </div>
+                
+
+                <li><a href="../Report/Report.html">Reports</a></li>
+
+                <li><a href="#">Audit Logs</a></li>
+
+                <li>
+                    <a href="#" class="toggle">Maintenance</a>
+                    <div class="dropdown">
+                        <a href="../Maintenance/Supplier/Supplier.html" class="option">Supplier</a>
+                        <div class="round-edges">
+                            <a href="#" class="option">User</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="inventory-content">
+            <header>
+                <h1>Inventory</h1>
+            </header>
+
+            <main>
+
+
+                <section>
+                    <div class="table-container">
+                        <table id="inventoryTable">
+                            <div class="header-table">
+                                <h4>
+                                    View Inventory
+                                </h4>
+                            </div>
+                        <thead>
+                            <tr>
+                            <th>Textiles Name</th>
+                            <th>Color</th>
+                            <th>Textiles Type</th>
+                            <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody class="scrollable-tbody">
+                        </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="search-container">
+                        <div class="header-table">
+                            <h4>
+                                Search Textiles
+                            </h4>
+                        </div>
+                        <label for="productType">Textiles Type:</label>
+                        <select id="productType">
+                          <option value="">Select Textiles Type</option>
+                        </select>
+                    
+                        <label for="color">Color:</label>
+                        <select id="color" disabled>
+                          <option value="">Select Color</option>
+                        </select>
+                        
+                        <div class="button-container">
+                            <div class="search">
+                                <button id="searchButton">Search</button>
+                            </div>
+
+                            <div class="clear">
+                                <button id="clearButton">Clear</button>
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+
+                    <div id="detailContainer" class="detail-container">
+                        <div class="header-table">
+                            <h4>
+                                Textiles Total Inventory
+                            </h4>
+                        </div>
+                        <div class="detail-bar-container">
+                            <div class="bar-wrapper">
+                                <div class="header-bar">
+                                    <div class="label">Fabrics</div>
+                                    <div class="quantity-number" id="fabrics-quantity-number"></div><p>/5000</p>
+                                </div>
+                                    <div class="quantity" id="fabrics-quantity"></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="header-bar">
+                                    <div class="label">Threads</div>
+                                    <div class="quantity-number" id="threads-quantity-number"></div><p>/1200</p>
+                                </div>
+                                <div class="quantity" id="threads-quantity"></div>
+                            </div>
+                    
+                            <div class="bar-wrapper">
+                                <div class="header-bar">
+                                    <div class="label">Notions</div>
+                                    <div class="quantity-number" id="notions-quantity-number"></div><p>/1000</p>
+                                </div>
+                                <div class="quantity" id="notions-quantity"></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="header-bar">
+                                    <div class="label">Tools</div>
+                                    <div class="quantity-number" id="tools-quantity-number"></div><p>/60</p>
+                                </div>
+                                <div class="quantity" id="tools-quantity"></div>
+                            </div>
+                        </div>    
+                    </div>
+                </section>
+
+
+            </main>
+                    
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

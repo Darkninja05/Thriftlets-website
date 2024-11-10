@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Lalezar&family=Inter' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="supplier-container">
+        
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="../../Images/Logo.jpg" alt="Logo" class="logo">
+                <h3>Thifleth’s Sewing 
+                    <br>Shop</h3>
+            </div>
+            <ul>
+
+                <li><a href="../../Dashboard/dashboard.html">Dashboard</a></li>
+
+                <li><a href="../../Order_Management/Order/Order.html">Procure Supplies</a></li>
+                
+                <li><a href="../../Inventory/Inventory.html">Inventory</a></li>
+
+                <li><a href="../../Report/Report.html">Reports</a></li>
+
+                <li><a href="#">Audit Logs</a></li>
+
+                
+                    <li>
+                <div class="selected">
+                        <a href="#" class="toggle">Maintenance</a>
+                </div>
+                        <div class="dropdown">
+                            <a href="Supplier.html" class="option">Supplier</a>
+                            <div class="round-edges">
+                                <a href="#" class="option">User</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="supplier-content">
+            <header>
+                <h1>Supplier</h1>
+            </header>
+
+            <main>
+                <div class="order">
+                    <div class="order-placeholder">
+                        <div class="top_header">
+                            <h4>View Suppliers</h4>
+                        </div>
+
+                        <div class="body_table">
+                            <table id="supplierTable"> 
+                                <thead>
+                                    <tr>
+                                        <th>Supplier Name</th>
+                                        <th>Phone number</th>
+                                        <th>Address</th>
+                                        <th>Email</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="scrollable-tbody">
+                                                        <!-- Supplier will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Supplier Details</h2>
+                                <div class="modal-info">
+                                    <div class="supplier-details">
+                                        <p>Supplier name: <span id="modal-supplier-name"></span></p>
+                                        <p>Address: <span id="modal-address"></span></p>
+                                        <p>Phone number: <span id="modal-phone-number"></span></p>
+                                        <p>Email: <span id="modal-email"></span></p>
+                                    </div>
+                                    <div class="products-table">
+                                        <table id="productsTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product Name</th>
+                                                    <th>Color</th>
+                                                    <th>Unit Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="scrollable-tbodymodal"> 
+                                                <!-- Products will be loaded here -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

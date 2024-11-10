@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Lalezar&family=Inter' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="archive-container">
+        
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="../../Images/Logo.jpg" alt="Logo" class="logo">
+                <h3>Thifleth’s Sewing 
+                    <br>Shop</h3>
+            </div>
+            <ul>
+                
+                <li> <a href="../../Dashboard/dashboard.html">Dashboard</a></li>
+                
+                <div class="selected">
+                    <li>
+                        <a href="../Order/Order.html">Procure Supplies</a>
+                    </li>
+                </div>
+                
+                <li><a href="../../Inventory/Inventory.html">Inventory</a></li>
+
+                <li><a href="../../Report/Report.html">Reports</a></li>
+
+                <li><a href="#">Audit Logs</a></li>
+
+                <li>
+                    <a href="#" class="toggle">Maintenance</a>
+                    <div class="dropdown">
+                        <a href="../../Maintenance/Supplier/Supplier.html" class="option">Supplier</a>
+                        <div class="round-edges">
+                            <a href="#" class="option">User</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li><a href="#">Settings</a></li>
+
+            </ul>
+        </nav>
+        <div class="archive-content">
+            <header>
+                <h1>Archive</h1>
+            </header>
+            
+                <div class="archive">
+                    <div class="archive-placeholder">
+                        <div class="top_header">
+                            <h4>View Archive
+                                <a href="../Order/Order.html" class="button">Go back</a>
+                            </h4>
+                        </div>
+                        <div class="body_table">
+                            <table id="orderTable">
+                                <thead>
+                                    <tr>
+                                        <th>Supplier</th>
+                                        <th>Textiles</th>
+                                        <th>Textiles Type</th>
+                                        <th>Color</th>
+                                        <th>Quantity</th>
+                                        <th>Total Price</th>
+                                        <th>Payment Method</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="scrollable-tbody">
+                                    <!-- Orders will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

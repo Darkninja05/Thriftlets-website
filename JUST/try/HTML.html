@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventory Data Table</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Inventory Data</h2>
+
+  <div class="search-container">
+    <label for="productType">Product Type:</label>
+    <select id="productType">
+      <option value="">Select Product Type</option>
+    </select>
+
+    <label for="color">Color:</label>
+    <select id="color" disabled>
+      <option value="">Select Color</option>
+    </select>
+
+    <button id="searchButton">Search</button>
+    <button id="clearButton">Clear</button>
+
+  </div>
+
+  <div class="table-container">
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Color</th>
+          <th>Product Type</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody class="scrollable-tbody">
+      </tbody>
+    </table>
+  </div>
+
+  <div id="detailContainer" class="detail-container hidden">
+    <div class="detail-content">
+      <p><strong>Supplier:</strong> <span id="supplierName"></span></p>
+      <p><strong>Product Name:</strong> <span id="productName"></span></p>
+      <p><strong>Product Type:</strong> <span id="productTypeDetail"></span></p>
+      <p><strong>Color:</strong> <span id="colorDetail"></span></p>
+      <p><strong>Quantity:</strong> <span id="quantityDetail"></span></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

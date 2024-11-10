@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter";
+    background-color: #f4f4f4;
+}
+
+.Procure-container {
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+}
+
+
+/* ----sidebar navigation---- */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 85px; 
+    height: 85px;
+    border-radius: 50%; 
+    border: 2px solid white; 
+    object-fit: cover;
+    display: flex;
+}
+
+.sidebar{
+    width: 333px;
+    height: auto;
+    background-color: #232D27;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h3 {
+    padding-left: 25px;
+    font-size: 20px;
+    font-family: "Inter";
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    width: 333px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    width: 333px;
+    height: 52px;
+    padding: 15px;
+    align-items: center;
+}
+
+.selected {
+    background-color: #518F53;
+}
+
+
+.dashboard-content {
+    flex-grow: 1;
+
+}
+
+/* #------------------------------# */
+
+header{
+    background-image: url(../../Images/green.jpg);
+    height: 118px;
+    background-size: 100%;
+}
+
+.dashboard-content h1 {
+    font-size: 60px;
+    padding: 20px;
+    color: white;
+    font-family: "Lalezar";
+}
+
+/* #------------------------------# */
+
+
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Smooth slide-down transition */
+    padding-left: 50px;
+  }
+
+.dropdown a {
+    display: block;
+    background-color: #549F72;
+    color: white;
+  }
+  
+  .dropdown a:hover {
+    background-color: #549F72;
+  }
+  
+  /* Active class for showing the dropdown */
+  .dropdown.active {
+    max-height: 200px; /* Set a max height for the content to smoothly expand */
+    transition: max-height 0.5s ease-in; /* Optional ease-in for smoothness */
+    padding-left: 50px;
+  }
+
+
+  /* #------------------------------# */
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container h4 {
+    font-size: 20px;
+}
+
+table {
+    width: 940px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container{
+    width: 960px;
+    height: 960px;
+    max-height: 400px; /* Adjust this value if needed */
+    overflow-y: auto;
+}
+
+.plus-button {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.plus-button:hover {
+    opacity: 0.9;
+}
+
+.botton {
+    background-color: #80F7A8;
+    color: black;
+    text-decoration: none;
+    height: 45px;
+    padding: 13px 40px 13px 40px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.action-bottons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.top-detail {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D5F9C0;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    padding: 15px 50px 15px 40px;
+    border-radius: 8px 8px 0 0;
+}
+
+.form-details {
+    padding: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 10px auto; /* Center the notification */
+    text-align: center; /* Center text */
+    width: 300px; /* Adjust width as needed */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Notification for order submission */
+.modal-confirm {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add background blur and darken */
+}
+
+/* New input fields styling */
+input, select {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#address, #paymentMethod {
+    margin-bottom: 20px;
+}
+
+/* Order Confirmation Notification */
+#orderConfirmation {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+#orderConfirmation h2 {
+    margin-bottom: 10px;
+}
+
+.confirmation-content {
+    display: flex;
+    flex-direction: column; /* Stack table and details vertically */
+    gap: 20px; /* Space between table and details */
+    height: 300px;
+}
+
+.confirm-notification {
+    background-color: #f0f0f0; 
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the notification */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    width: 50%; /* Adjust width as needed */
+}
+
+
+
+.confirmation-table {
+    flex: 1; /* Table takes up available space */
+    overflow-y: auto; /* Add vertical scrollbar */
+    max-height: 200px; /* Set maximum height for scrolling */
+}
+
+.confirmation-details {
+    text-align: left; /* Align details to the left */
+    margin-bottom: 20px;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+#confirmationTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#confirmationTable th, 
+#confirmationTable td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#confirmationAddress, 
+#confirmationPaymentMethod,
+#confirmationTotalPrice {
+    font-weight: bold;
+}

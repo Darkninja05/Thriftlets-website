@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Lalezar&family=Inter' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="Dashboard-container">
+        
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="../Images/Logo.jpg" alt="Logo" class="logo">
+                <h3>Thifleth’s Sewing 
+                    <br>Shop</h3>
+            </div>
+            <ul>
+                <div class="selected">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                </div>
+                
+                <li><a href="../Order_Management/Order/Order.html">Procure Supplies</a></li>
+                
+                <li><a href="../Inventory/Inventory.html">Inventory</a></li>
+
+                <li><a href="../Report/Report.html">Reports</a></li>
+
+                <li><a href="#">Audit Logs</a></li>
+
+                <li>
+                    <a href="#" class="toggle">Maintenance</a>
+                    <div class="dropdown">
+                        <a href="../Maintenance/Supplier/Supplier.html" class="option">Supplier</a>
+                        <div class="round-edges">
+                            <a href="#" class="option">User</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="dashboard-content">
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+                    
+            <main>
+                <section>
+                    <div class="stats-overview">
+                        <div class="card">
+                            <h3>Product to Deliver</h3>
+                            <p id="totalUsers">150</p>
+                        </div>
+                        <div class="card">
+                            <h3>Product Return</h3>
+                            <p id="newOrders">45</p>
+                        </div>
+                        <div class="card">
+                            <h3>Pending Order</h3>
+                            <p id="totalRevenue">$12,000</p>
+                        </div>
+                    </div>
+
+                    <div class="bargraph">
+                        <div class="bargraph-placeholder">
+                            <h4>Monthly Replenishment</h4>
+                            <canvas id="barChart" width="190" height="60"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="linegraph">
+                        <div class="linegraph-placeholder">
+                            <h4>Monthly Production Usage</h4>
+                            <canvas id="lineChart" width="190" height="70"></canvas>
+                        </div>
+                    </div>
+                </section>
+                    
+                <section>
+                    <div class="recent_order">
+                        <div class="recent_order-placeholder">
+                            <h4>Recent Order</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Supplier</td>
+                                        <td>Product</td>
+                                        <td>Date</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="waste">
+                        <div class="waste-placeholder">
+                            <h4>Waste Percentage</h4> 
+                            <canvas id="pieChart" width="190" height="70"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

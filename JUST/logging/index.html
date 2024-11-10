@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Messaging System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-signup-container">
+    <div id="login-form">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="showSignupForm()">Sign Up</a></p>
+    </div>
+    <div id="signup-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <form action="signup.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="text" name="admin_key_code" placeholder="Admin Key Code (if applicable)" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+    </div>
+  </div>
+
+  <div id="messaging-system" style="display: none;">
+    <div class="container">
+      <div class="sidebar">
+        <h3>Chat</h3>
+        <ul class="user-list">
+          <!-- User list will be populated here -->
+        </ul>
+      </div>
+      <div class="chat-box">
+        <div class="chat-area">
+          <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="message-input">
+          <input type="text" id="message-input" placeholder="Type your message...">
+          <button id="send-message-button">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

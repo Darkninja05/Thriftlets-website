@@ -1,0 +1,124 @@
+/* styles.css */
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust width as needed */
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  display: block; 
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 120px; 
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Scrollbar Styling */
+.scrollable-tbody {
+  height: 300px; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  display: block; 
+  width: 100%; 
+}
+
+/* Scrollbar Customization (Optional) */
+.scrollable-tbody::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.scrollable-tbody::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+.scrollable-tbody::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 5px; 
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container label {
+  margin-right: 10px;
+}
+
+.search-container select {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-container button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Detail Container */
+.detail-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.detail-container.hidden {
+  display: none;
+}
+
+.detail-content {
+  padding: 10px;
+}
+
+.detail-content p {
+  margin-bottom: 5px;
+}
+
+.detail-content span {
+  font-weight: bold;
+}

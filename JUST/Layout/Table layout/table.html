@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lalezar&family=Inter' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+
+<body>  
+
+    
+
+  
+<div class="body_table">
+       <table id="supplierTable"> 
+            <thead>
+                <tr>
+                    <th>Supplier Name</th>
+                    <th>Phone number</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="scrollable-tbody">
+                                    <!-- Supplier will be loaded here -->
+            </tbody>
+        </table>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Supplier Details</h2>
+        <div class="modal-info">
+            <div class="supplier-details">
+                <p>Supplier name: <span id="modal-supplier-name"></span></p>
+                <p>Address: <span id="modal-address"></span></p>
+                <p>Phone number: <span id="modal-phone-number"></span></p>
+                <p>Email: <span id="modal-email"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
